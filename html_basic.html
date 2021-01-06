@@ -3,6 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>heading tags</title>
+        <style media="screen">
+          td{ 
+            border: 1px solid;
+            width:50px;
+            height:50px;
+            }
+            th{ 
+            border: 1px solid;
+            width:50px;
+            height:50px;
+            }
+            div{ 
+            border: 1px solid;
+            width:50px;
+            height:50px;
+            }
+            span{ 
+            border: 1px solid;
+            width:50px;
+            height:50px;
+            }
+        </style>
 
     </head>
 
@@ -35,17 +57,20 @@
  게다가 IETF의 후원하에 개발은 상충하는 이해 관계 때문에 지연되었다. 1996년부터 HTML 규격은 상용 소프트웨어 제작사의 투입으로 월드 와이드 웹 컨소시엄(W3C)에서 유지해 왔다.[12] 하지만 2000년부터 HTML 또한 국제 표준(ISO/IEC 15445:2000)이 되었다. 현재 W3C에 의해 발표된 최신 규격은 1999년 말에 발표된 HTML 4.01 권고안이며 2001년에 문제와 오류들이 수정되어 발표된 안이 최종 승인되었다.
  </p>
  
+  <h3>b, i, u, s 태그</h3>
  <p>
    <b>Lorem</b> <i>ipsum</i>
    <u>Lorem</u> <s>ipsum</s>
  </p>
  
+ <h3>block & inline</h3>
  <div>block</div>
  <div>block</div>
- <sp>inline</sp>
- <sp>inline</sp>
- <sp>inline</sp>
+ <span>inline</span>
+ <span>inline</span>
+ <span>inline</span>
  
+ <h3>list</h3>
  <ol>
    <li>콩나물</li>
    <li>파</li>
@@ -56,8 +81,63 @@
    <dt>콩나물</dt>
    <dd>콩나물은 대한민국의 대표적인 음식재료 중 하나로, 그늘에서 발아시킨 콩의 뿌리를 자라게 한 식료품을 말한다.</dd>
  </dl>
+
+ <table>
+   
+    <tr>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td>
+    </tr>
+
+ </table>
   <img src="./hangiriboy.png" alt="giriboy">
  
+  <h3>table 연습</h3>
+  <table> <!-- 5행 5열의 table -->
+    <caption>Specfication values</caption> <!-- 표의 제목 -->
+    <thead> <!-- 제목 행 - 2개의 행으로 이루어짐 -->
+      <tr>
+        <th rowspan="2">Grade.</th>
+        <th rowspan="2">Point.</th>
+        <th colspan="2">Strength.</th>
+        <th rowspan="2">Percent.</th>
+      </tr>
+      <tr>
+        <th>kg/mm</th>
+        <th>lb/in</th>
+      </tr>
+    </thead>
+    <tbody> <!-- -->
+      <tr>
+        <td>Hard</td>
+        <td>0.45</td>
+        <td>56.2</td>
+        <td>80,000</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Midium</td>
+        <td>0.45</td>
+        <td>49.2</td>
+        <td>70,000</td>
+        <td>25</td>
+      </tr>
+      <td>Soft</td>
+      <td>0.45</td>
+      <td>42.2</td>
+      <td>60,000</td>
+      <td>30</td>
+    </tr>
+    </tbody>
+  </table>
+
+    <h3>Form 관련 요소 </h3>
+    <input type="text">
         
     </body>
 </html>
