@@ -137,23 +137,37 @@
   </table>
    
     <h3>Form 관련 요소 </h3>
-    id:<input type="text" placeholder="영문으로 작성"><br>
-    pw:<input type="passwd"><br>
-    sex: 남자<input type="radio" name="gender" checked> 여자<input type="radio" name="gender"><br>
-    hobby: movie<input type="checkbox" name="hobby" checked> music<input type="checkbox" name="hobby"> book<input type="checkbox" name="hobby"><br>
+    <h3>label로 form 연결</h3>
+    <h3>fieldset, legend</h3>
 
-    photo:<input type="file"><br>
-    <input type="submit" value="전송"><br>
-    <input type="reset"><br>
-    <input type="button" value="등록"><br>
-    <input type="image" src="./hangiriboy.png" alt="hangiriboy" width="100" height="50"><br>
-    <select>
-      <option>내용1</option>
-      <option>내용2</option>
-      <option selected>내용3</option>
-    </select>
+
+    <fieldset>
+      <legend>기본 정보</legend>
+
+      <label for="user_id">아이디:</label>
+      <input type="text" placeholder="영문으로 작성" id="user_id"><br>
+      pw:<input type="passwd"><br>
+      sex: <label for="male">남자</label><input id="male" type="radio" name="gender" checked> 여자<input type="radio" name="gender"><br>
+    </fieldset>
     
-    
+    <fieldset>
+      <legend>부가 정보</legend>
+      hobby: movie<input type="checkbox" name="hobby" checked> 
+            music<input type="checkbox" name="hobby"> book<input type="checkbox" name="hobby"><br>
+
+      photo:<input type="file"><br>
+      <input type="submit" value="전송"><br>
+      <input type="reset"><br>
+      <input type="button" value="등록"><br>
+      <input type="image" src="./hangiriboy.png" alt="hangiriboy" width="100" height="50"><br>
+      사는곳:<select>
+        <option>서울</option>
+        <option>경기</option> 
+        <option selected>제주</option>
+      </select>
+      
+      자소: <textarea plceholder="150자 이내로 써주세요" cols="30" rows="10"></textarea>
+  </fieldset>
 
 
     </body>
