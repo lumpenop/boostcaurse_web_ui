@@ -1,0 +1,15 @@
+
+h4 {
+    color:goldenrod;
+}
+
+.poo{
+    color:indianred;
+    font-size: 30;
+}
+
+.bar{
+    font-size: 20px;
+}
+
+p[class~="color"] {font-style: italic;}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>css basic</title>
+        <style>
+            p {color:gray;}
+
+            div span { color : red;}
+            div > span {color:cadetblue;}
+            div + span { color :coral;}
+
+            li:first-child{color : red;}
+            li:last-child{color:blue;}
+
+            a:link{color:blue;}
+            a:visited{color:crimson;}
+
+            a:focus{background-color : yellow;}
+            a:hover {font-weight:bold;}
+            a:active{color:red;}
+        </style>
+
+        <link rel="stylesheet" href="./practice.css">
+
+    </head>
+
+    <body>
+        <h3 style="color:blueviolet;">tag</h3>
+
+        <p> style tag <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <h4>Style sheet</h4>
+
+            <dt class="poo">JS</dt>
+            <dd class="bar"><span class="bar" style="color:cadetblue;">JS</span>는 문서의 동작을 나타냅니다.</dd> <br>
+            
+            /* 주석 */
+            
+            <p class="color hot">red</p>
+            <p class="cool color">blue</p>
+            <p class="colorful nature">rainbow</p>
+
+
+            /* 문서 구조를 이용한 선택자 */
+            <div>
+                <h1><span>HTML</span>:Hyper Text Markup Language</h1>
+                <span>CSS는 문서를 꾸며줍니다</span>
+            </div>
+            <span>Javascript는 문서를 동적으로 제어할 수 있습니다</span>
+            <p>HTML과 CSS, Javascript를 이용하여 멋진 웹사이트를 만들 수 있습니다</p>
+
+            <h3>가상 클래스</h3> 
+
+            <h4>문서 구조 가상 클래스</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+            
+            <h4>link 가상 클래스</h4>
+            <a href="./html_basic.html" target="_blank">html_basic</a>
+            <a href="http://naver.com">naver</a>
+    </body>
+</html>
