@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>pseudo elements</title>
+        <style media="screen">
+      
+        p:after{
+            color:blue;
+            content: "after 가상 요소";
+        }
+
+        p:first-line {
+            color:blueviolet;
+        }
+
+        p:before {
+            color:red;
+            content:"before 가상 요소 활용";
+        }
+
+        p:first-letter{
+            font-size:3em;
+        }
+
+        div {
+            background-color: pink;
+            background-image: url("./hangiriboy.png");
+            height:500px;
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-attachment: scroll;
+            padding: 30px 20px 30px 20px;
+        }
+
+        span {
+            background-color: crimson;
+
+            border-width:10px;
+            border-style:solid;
+            border-color:darkolivegreen;
+
+            padding-top:0;
+            padding-right:20px;
+            padding-bottom:10px;
+            padding-left:20px;
+
+            margin:50px 50px 50px 50px;
+
+            width: 300px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+            Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. <br>
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div>
+                배경에 대해서 알아봅시다
+
+                
+            </div>
+
+            <span>배경에 대해서 알아봅시다</span>
+
+    
+    </body>
+</html>
